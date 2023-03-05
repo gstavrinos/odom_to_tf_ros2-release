@@ -1,0 +1,13 @@
+Source: ros-rolling-odom-to-tf-ros2
+Section: misc
+Priority: optional
+Maintainer: George Stavrinos <gstavrinos@protonmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-nav-msgs, ros-rolling-rclcpp, ros-rolling-tf2-ros, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-odom-to-tf-ros2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-nav-msgs, ros-rolling-rclcpp, ros-rolling-tf2-ros, ros-rolling-ros-workspace
+Description: A simple ros2 package (node) that reads an odom topic and generates the equivalent tf connection (transformation).
+ It also provides options to override frame names, or just use the ones in the original odom topic.
