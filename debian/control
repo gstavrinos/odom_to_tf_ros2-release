@@ -1,0 +1,13 @@
+Source: ros-humble-odom-to-tf-ros2
+Section: misc
+Priority: optional
+Maintainer: George Stavrinos <gstavrinos@protonmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-nav-msgs, ros-humble-rclcpp, ros-humble-tf2-ros, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-odom-to-tf-ros2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-nav-msgs, ros-humble-rclcpp, ros-humble-tf2-ros, ros-humble-ros-workspace
+Description: A simple ros2 package (node) that reads an odom topic and generates the equivalent tf connection (transformation).
+ It also provides options to override frame names, or just use the ones in the original odom topic.
